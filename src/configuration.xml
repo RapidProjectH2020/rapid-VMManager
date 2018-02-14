@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RAPID_VMM_DS>
+	<description>RAPID VMM and DS Configuration</description>
+		<VMM>
+			<vmmPort>9000</vmmPort>
+			<vmmMaxConnection>100</vmmMaxConnection>
+			<vmmIpAddress>0.0.0.0</vmmIpAddress>
+			<openStackSupport>1</openStackSupport>
+			<!-- for openstack -->
+			<defaultFlavorId>8ff03907-e210-4d5c-b328-54af88bc7733</defaultFlavorId>
+			<type2_1024_20FlavorId>d97def8c-8917-47d0-97df-0cf508189ff1</type2_1024_20FlavorId>
+			<type4_1024_20FlavorId>b8c86381-c303-4d2b-a665-a9cf5521e128</type4_1024_20FlavorId>
+			<linuxNormalVmImageId>4c5cdd9c-4891-4b09-9a3e-16c66049408d</linuxNormalVmImageId>
+			<linuxHelperVmImageId>4c5cdd9c-4891-4b09-9a3e-16c66049408d</linuxHelperVmImageId>
+			<androidNormalVmImageId>18e0b1a9-f380-4ada-9c7d-b803a10809bc</androidNormalVmImageId>
+			<androidHelperVmImageId>18e0b1a9-f380-4ada-9c7d-b803a10809bc</androidHelperVmImageId>
+			<authAddress>http://0.0.0.0:5000/v3</authAddress>
+			<openStackUserId>userId</openStackUserId>
+			<openStackPasswd>admin</openStackPasswd>
+			<projectId1>7795f206196a49bf8803f975b053cb4c</projectId1>
+			<projectId2>af9d60fd9bc84e919fab6b25af41ec03</projectId2>
+			<networkId>58a60bdf-8ff7-4073-a2a0-67e9d2a53b36</networkId>
+			<publicKey>rapid_vms</publicKey>
+			<offloadingSecurity>Offloading</offloadingSecurity>
+			<!-- for libvirt -->
+			<normalVmImagePath>/home/rapid/vm_images/RAPID_VM_template.img</normalVmImagePath>
+			<helperVmImagePath1>/home/rapid/vm_images/RAPID_Helper1.img</helperVmImagePath1>
+			<helperVmImagePath2>/home/rapid/vm_images/RAPID_Helper2.img</helperVmImagePath2>
+			<vmImageFolder>/home/rapid/vm_images</vmImageFolder>
+			<!-- end for libvirt -->
+			<gpuCores>3072</gpuCores>
+			<availableType>1000000000</availableType>
+			<nvidiaSmiPath>/usr/bin/nvidia-smi</nvidiaSmiPath>
+			<gpuDeviceNum>0</gpuDeviceNum>
+			<dataPath>/home/rapid/vmm_data</dataPath>
+			<ipShellPath>/home/rapid/rapid_vmm_ds/getIp.sh</ipShellPath>
+			<vmShellPath>/home/rapid/rapid_vmm_ds/getVm.sh</vmShellPath>
+		</VMM>
+</RAPID_VMM_DS>
